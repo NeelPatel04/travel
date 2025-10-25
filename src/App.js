@@ -10,17 +10,19 @@ import Preview from './pages/Preview';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/blog" element={<TravelBlog />} />
-        <Route path="/bucket-list" element={<BucketList />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/preview" element={<Preview />} />
-      </Routes>
-    </Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/blog" element={<TravelBlog />} />
+          <Route path="/bucket-list" element={<BucketList />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/preview" element={<Preview />} />
+        </Routes>
+      </Router>
+    </BrowserRouter>
   );
 }
 

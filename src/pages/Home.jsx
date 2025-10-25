@@ -3,11 +3,11 @@ import HomeCard from '../components/HomeCard';
 import '../css/Home.css';
 
 function Home() {
-    // Hardcoded data - will be replaced with JSON later
+    
     const destinations = [
         {
             _id: 1,
-            img: "images/greece.jpg", 
+            img: `${process.env.PUBLIC_URL}/images/greece.jpg`,
             country: "Greece",
             city: "Santorini",
             cost: 2051,
@@ -15,7 +15,7 @@ function Home() {
         },
         {
             _id: 2,
-            img: "images/dubai.jpg",
+            img: `${process.env.PUBLIC_URL}/images/dubai.jpg`,
             country: "United Arab Emirates",
             city: "Dubai",
             cost: 2023,
@@ -23,7 +23,7 @@ function Home() {
         },
         {
             _id: 3,
-            img: "images/switzerland.jpg",
+            img: `${process.env.PUBLIC_URL}/images/switzerland.jpg`,
             country: "Switzerland",
             city: "Interlaken",
             cost: 3650,
@@ -35,7 +35,7 @@ function Home() {
         <>
             <div
                 className="banner"
-                style={{ backgroundImage: "url('/images/banner1.jpg')" }}
+                style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/banner1.jpg)`}}
             ></div>
             <div className="content">
                 <h2>Featured Destinations</h2>

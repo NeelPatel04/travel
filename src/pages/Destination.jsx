@@ -3,7 +3,7 @@ import DestinationCard from '../components/DestinationCard';
 import '../css/Destination.css';
 
 function Destination() {
-    // Hardcoded data - will be replaced with JSON later
+
     const destinations = [
         {
             _id: 1,

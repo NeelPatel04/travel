@@ -1,0 +1,51 @@
+.destination {
+    width: calc(33.33% - 13.33px);
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.destination p {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.destination .cost {
+    font-weight: bold;
+    color: var(--text);
+    margin: 15px 0;
+}
+
+.destination a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.destination a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .destination {
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+.bucket-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.bucket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.bucket-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bucket-card h3 {
+    margin: 10px 0 5px;
+    color: var(--primary);
+}
+
+.bucket-card .cost {
+    font-weight: bold;
+    color: var(--accent);
+    margin: 10px 0;
+}
+
+.bucket-card .actions {
+    margin: 15px 0;
+}
+
+.bucket-card .actions button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.bucket-card .actions button:hover {
+    opacity: 0.85;
+}
+
+.bucket-card .actions .remove {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.bucket-card .actions .book {
+    background-color: var(--primary);
+    color: white;
+}

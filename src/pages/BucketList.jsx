@@ -6,19 +6,19 @@ function BucketList() {
     const bucketItems = [
         {
             id: 1,
-            img: "/images/greece.jpg",
+            img: "images/greece.jpg",
             name: "Santorini, Greece",
             cost: 2051
         },
         {
             id: 2,
-            img: "/images/dubai.jpg",
+            img: "images/dubai.jpg",
             name: "Dubai, United Arab Emirates",
             cost: 2023
         },
         {
             id: 3,
-            img: "/images/paris.jpg",
+            img: "images/paris.jpg",
             name: "Paris, France",
             cost: 2450
         }

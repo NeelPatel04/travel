@@ -7,7 +7,7 @@ function Destination() {
     const destinations = [
         {
             _id: 1,
-            img: "/images/greece.jpg",
+            img: "images/greece.jpg",
             country: "Greece",
             city: "Santorini",
             cost: 2051,
@@ -15,7 +15,7 @@ function Destination() {
         },
         {
             _id: 2,
-            img: "/images/dubai.jpg",
+            img: "images/dubai.jpg",
             country: "United Arab Emirates",
             city: "Dubai",
             cost: 2023,
@@ -23,7 +23,7 @@ function Destination() {
         },
         {
             _id: 3,
-            img: "/images/switzerland.jpg",
+            img: "images/switzerland.jpg",
             country: "Switzerland",
             city: "Interlaken",
             cost: 3650,
@@ -31,7 +31,7 @@ function Destination() {
         },
         {
             _id: 4,
-            img:"/images/paris.jpg",
+            img:"images/paris.jpg",
             country: "France",
             city: "Paris",
             cost: 2450,

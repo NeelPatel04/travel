@@ -9,7 +9,7 @@ function About() {
                 <h3>TrekTales Mission Statement</h3>
                 <div className="mission-statement">
                     <p>At TrekTales, our mission is to ignite the spirit of exploration by crafting unforgettable journeys that connect travelers with the world's hidden wonders, vibrant cultures, and transformative experiences. We believe travel is more than a destination, it's a gateway to personal growth, meaningful connections, and lifelong memories. Whether you're chasing sunsets in Santorini or hiking the Great Wall, we handle the details so you can focus on the adventure, delivering seamless, sustainable trips that inspire wonder and respect for our planet.</p>
-                    <img src="/images/logo.png" alt="Mission" />
+                    <img src="images/logo.png" alt="Mission" />
                 </div>
                 <h3>Why Choose TrekTales?</h3>
                 <div className="why-choose">

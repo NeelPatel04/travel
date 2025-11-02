@@ -110,7 +110,6 @@ function About() {
                             allowFullScreen="" 
                             loading="lazy" 
                             referrerPolicy="no-referrer-when-downgrade"
-                            title="Singapore Changi Airport Location"
                         ></iframe>
                     </div>
                 </section>

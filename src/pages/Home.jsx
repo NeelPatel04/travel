@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeCard from '../components/HomeCard';
+import Slideshow from '../components/Slideshow';
 import '../css/Home.css';
 
 function Home() {
@@ -33,10 +34,7 @@ function Home() {
 
     return (
         <>
-            <div
-                className="banner"
-                style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/banner1.jpg)`}}
-            ></div>
+            <Slideshow />
             <div className="content">
                 <h2>Featured Destinations</h2>
                 <div className="featured">

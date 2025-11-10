@@ -3,7 +3,7 @@ import axios from 'axios';
 import DestinationCard from '../components/DestinationCard';
 import '../css/Destination.css';
 
-const API_URL = 'http://localhost:3001/api/dest';
+const API_URL = 'https://project-server-86c4.onrender.com/api/dest';
 
 
 function Destination() {

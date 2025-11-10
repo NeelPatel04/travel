@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/DestinationCard.css';
 
-const SERVER_URL = 'http://localhost:3001';
+const SERVER_URL = 'https://project-server-86c4.onrender.com';
 
 
 function DestinationCard({ destination }) {

@@ -3,9 +3,6 @@ import axios from 'axios';
 import DestinationCard from '../components/DestinationCard';
 import '../css/Destination.css';
 
-// IMPORTANT: Replace with your actual Render URL after deployment
-// For local testing, use: http://localhost:3001/api/dest
-// const API_URL = 'https://your-server.onrender.com/api/dest';
 const API_URL = 'http://localhost:3001/api/dest';
 
 
@@ -14,7 +11,7 @@ function Destination() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // After page has loaded
+    // After page loaded
     useEffect(() => {
         const loadDestinations = async () => {
             try {

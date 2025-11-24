@@ -6,7 +6,7 @@ function Preview() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate(-1); // Goes back to the previous page
+    navigate(-1);
   };
 
   return (

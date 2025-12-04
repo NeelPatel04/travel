@@ -22,9 +22,6 @@ function TravelBlog() {
     };
 
     const updateBlogs = (newBlog) => {
-        if (newBlog.img && !newBlog.img.startsWith('http')) {
-            newBlog.img = `${SERVER_URL}/${newBlog.img}`;
-        }
         setBlogPosts((blogs) => [...blogs, newBlog]);
     };
 

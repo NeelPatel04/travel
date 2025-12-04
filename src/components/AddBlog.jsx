@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/AddBlog.css";
 
 const API_URL = 'https://project-server-86c4.onrender.com/api/blogs';
+const SERVER_URL = 'https://project-server-86c4.onrender.com';
 
 const AddBlog = (props) => {
     const [result, setResult] = useState("");
@@ -29,6 +30,11 @@ const AddBlog = (props) => {
             if (response.status === 200) {
                 setResult("Blog post added successfully!");
                 const newBlog = await response.json();
+                
+                if (newBlog.img && !newBlog.img.startsWith('http')) {
+                    newBlog.img = `${SERVER_URL}/${newBlog.img}`;
+                }
+                
                 event.target.reset();
                 setPrevSrc("");
                 props.closeAddDialog();

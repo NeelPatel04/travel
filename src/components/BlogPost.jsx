@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import BlogDialog from './BlogDialog';
 import '../css/BlogPost.css';
 
+const SERVER_URL = 'https://project-server-86c4.onrender.com';
+
 function BlogPost({ post: initialPost }) {
     const [post, setPost] = useState(initialPost);
     const [showBlog, setShowBlog] = useState(true);
@@ -17,7 +19,11 @@ function BlogPost({ post: initialPost }) {
 
     const updateBlog = (updatedBlog) => {
         if (updatedBlog.img && !updatedBlog.img.startsWith('http')) {
-            updatedBlog.img = `http://localhost:3001/${updatedBlog.img}`;
+            if (updatedBlog.img.startsWith('images/')) {
+                updatedBlog.img = `${SERVER_URL}/${updatedBlog.img}`;
+            } else {
+                updatedBlog.img = `${SERVER_URL}/${updatedBlog.img}`;
+            }
         }
         setPost(updatedBlog);
     };

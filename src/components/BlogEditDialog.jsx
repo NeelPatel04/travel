@@ -17,7 +17,6 @@ const BlogEditDialog = (props) => {
         setResult("Updating...");
 
         const formData = new FormData(event.target);
-        formData.append("_id", props._id);
 
         try {
             const response = await fetch(`${API_URL}/${props._id}`, {
